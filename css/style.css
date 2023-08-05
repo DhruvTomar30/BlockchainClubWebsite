@@ -1,6 +1,15 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
 
-.back{
-    background-color:#000000;   
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color:#141414;   
     height:100vh;
     /* width: 100vw; */
 }
@@ -12,8 +21,10 @@ div.container-fluid.back{
     padding: 0;
 }
 
+
+
 .navbar{
-    background-color: #000000;
+    background-color: #141414;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +35,7 @@ div.container-fluid.back{
     z-index: 10;
     
 }
+
 .navbar-brand.logo{
     color: #fff;
     font-size: 1rem;
@@ -34,7 +46,6 @@ div.container-fluid.back{
 .navbar-brand.logo:hover{
     opacity: 1;
 }
-
 
 a.nav-link{
     color: #fff;
@@ -55,6 +66,8 @@ p.text-center.lead{
     padding: 0px;
     margin:0px;
     width: 1230px;
+    font-weight: 400;
+    color: aliceblue;
 }
 
 .major{
