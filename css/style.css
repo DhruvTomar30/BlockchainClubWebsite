@@ -414,3 +414,15 @@ marquee .boxcontain .winnerbox:hover{
     height: 70vh;
 }
 /* blogs section end */
+
+/* join us start */
+.join_us{
+    background:linear-gradient(to bottom,rgb(19, 35, 73),rgb(31, 31, 37))
+}
+/* join us done */
+
+/* footer start */
+.footer{
+    background:linear-gradient(to bottom,rgb(31, 31, 37),#141414)
+}
+/* footer done */
