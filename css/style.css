@@ -417,12 +417,145 @@ marquee .boxcontain .winnerbox:hover{
 
 /* join us start */
 .join_us{
-    background:linear-gradient(to bottom,rgb(19, 35, 73),rgb(31, 31, 37))
+    padding-top: 40px;
+    background:linear-gradient(to bottom,rgb(19, 35, 73),rgb(31, 31, 37),#141414);
 }
+.join_us .under{
+    width: 100px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-left: 35px;
+}
+.join_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialicon{
+    width: 400px;
+}
+.socialicon ul{
+    list-style:none ;
+}
+.socialicon ul li{
+    /* padding: 10px; */
+    margin: 30px;
+}
+.socialicon ul li a{
+    padding: 15px;
+    padding-top: 20px ;
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding-bottom: 15px;
+}
+.socialicon ul li i{
+    font-size:35px ;
+    
+    padding-right: 20px;
+    
+}
+.contact .content form {
+    width: 45%;
+    margin-right: 3.5rem;
+  }
+  form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .form-group .field {
+    height: 50px;
+    display: flex;
+    position: relative;
+    margin: 1rem;
+    width: 100%;
+  }
+  form i{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: rgb(51, 51, 51);
+    font-size: 17px;
+    pointer-events:none;
+    transform: translateY(-50%);
+  }
+  form .field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 16px 0 48px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    background: #e5ecfb;
+  }
+  .checkfield{
+    padding-left: 18px;
+    margin-top: 10px;
+  }
+  .checkfield p{
+    color: #fff;
+  }
+  .field input::placeholder {
+    color: rgb(51, 51, 51);
+  }
+  .field input:focus{
+    padding-left: 47px;
+    border: 2px solid rgb(115, 3, 167);
+  }
+  .field input:focus ~ i{
+    color: rgb(115, 3, 167);
+  }
+
+  form .button-area {
+    display: flex;
+    float: right;
+    flex-direction:8 row-reverse;
+  }
+  .button-area button {
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 13px 25px;
+    background: #2506ad;
+    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+    transition: 0.3s ease;
+    font-family: "Nunito", sans-serif;
+  }
+  .button-area button:hover {
+    background: #421cecf5;
+  }
+  
+  .button-area button i {
+    position: relative;
+    top: 6px;
+    left: 2px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: #fff;
+  }
+  .button-area button:hover i {
+    left: 8px;
+  }
 /* join us done */
 
 /* footer start */
 .footer{
-    background:linear-gradient(to bottom,rgb(31, 31, 37),#141414)
+    background-color:#141414;
+    position: sticky;
+    bottom: 0;
+
+}
+.footer p {
+    color: #fff;
+    text-align: center;
+    margin: 0px;
 }
 /* footer done */
