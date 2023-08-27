@@ -12,62 +12,115 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
     <!-- font awesome cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
+     <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+     
+    <!-- Vendors Links -->
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">
-          <img style="padding-right: 0.5rem;" src="../assets/logos/blue_text_horizontal.png" alt="" width="200" height="80" class="d-inline-block align-text-top">
-      
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Mentorship
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Event</a>
-            </li>
-            <li style="padding-right: 1rem;" class="nav-item">
-              <a  class="nav-link" href="#">Newsroom</a>
-            </li>
-            <li class="nav-item login">
-              <a href="#" class="btn btn btn-primary rounded-pill login1">Get started</a>
-            </li>
-          </ul>
+    
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html"><img style="width: 140px; padding-top: 10px; height: 60px;" src="../assets/logos/blue_text_horizontal.png" class="d-inline-block align-text-top logoimg">
+        </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <!-- Navbar Started -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Podcasts</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Mentorship</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
+          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Testimonials</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right drop"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <!-- <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li> -->
+                </ul>
+              </li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Winners</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+   <section id="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>Building Trust 🤝 <br> Block by <span> Block .</span></h1><br>
+            <h5>This is a community which provides free hands on training in various fields of computer science</h5>
+            <div class="text-center text-lg-start">
+              <a href="#about-us" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="/BlockchainClubWebsite/assets/imgs/hero-img.png" class="img-fluid animated" alt="">
         </div>
       </div>
-    </nav>
+    </div>
 
-    <!-- hero section start -->
-    <section class="container-fluid main">
-      <div class=" row block">
-        <h1 class=" heading display-1 text-center fw-bold text-white">Building Trust 🤝. <br><span></span> Block by Block </h1>
-      </div>
-      <div class="row text-white">
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+      <!-- <div class="row text-white">
         <p class="text-center lead ">This is a community which provides free hands 
           on training in varios fields of computer science <br> and have an inclusive community
           focusing on a learn by doing approach</p>
-      </div>
-      <br>
+      </div> -->
+      <!-- <br>
       <div class="major">
         <button class="btn btn-primary rounded-pill major1">Podcasts</button>
         <button class="btn btn-primary rounded-pill major1">Mentorship</button>
         <button class="btn btn-primary rounded-pill major1">Events</button>
       </div>
-    </section>
+    </section> -->
     <!-- hero section done -->
 
     <!-- about section start -->
-    <section class="about-us">
+    <section id="about-us">
       <h1 class="title">About Us.. </h1>
       <div class="under"></div>
       <div class="abt-container">
@@ -111,7 +164,7 @@
         <h1 class="title"> Testimonials... </h1>
         <div class="under"></div>
         
-        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
           <div class="carousel-cell"></div>
           <div class="carousel-cell"></div>
           <div class="carousel-cell"></div>
@@ -247,10 +300,10 @@
 
     <!-- join us  done-->
     <!--  footer  start-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <p >made by shashwat, dhruv, harsh ,deepanshu.</p>
     </footer>
-    <!--  footer  done-->
+     footer  done -->
     
     <!-- carosel js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
